@@ -4,10 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
 </head>
 
 
 <body>
-또 이 삼문을 지나면 높게 축조된 기단상에 사당을 배치하고 있는데, 이는 사당을 중심으로 강당이 우측에 위치하고 있는 좌묘우당식의 배치법을 따르고 있다.
+<h1>Hello</h1>
+<script>
+    console.log(location.origin);
+    $.ajax({
+        url: 'https://tour.chungbuk.go.kr/openapi/tourInfo/attr.do',
+        type:'GET',
+        success:(function(result){
+            console.log(result);
+        })
+
+    });
+</script>
 </body>
 </html>
