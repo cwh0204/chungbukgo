@@ -5,20 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="./js/main.js"></script>
 </head>
 
+<div class="div-top">
+    <div class="div-top-1col">
+        <img class="div-center" src="./img/iconL.png">
+    </div>
+    <div class="div-top-2col">
+        <div class="div-center">
+            <h1 class="main-title margin0 white-font">YOUR WORLD OF JOY</h1>
+            <h2 class="side-title margin0 white-font">충북에서 여행의 모든 즐거움을 찾아보세요</h2>
+        </div>
+    </div>
+    <div class="div-top-3col">
+        <img class="div-center" src="./img/iconR.png">
+    </div>
+</div>
+
+<div class="div-flex">
+    <div>
+        <div class="div-menu1 firstdiv-margin">
+            여행지 둘러보기&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        <div class="div-menu2 firstdiv-margin">
+            클릭 화면
+        </div>
+    </div>
+    <div class="div-menu3 firstdiv-margin">
+        나의 테마 여행
+    </div>
+</div>
 
 <body>
-<h1>Hello</h1>
 <script>
-    console.log(location.origin);
     $.ajax({
-        url: 'https://tour.chungbuk.go.kr/openapi/tourInfo/attr.do',
+        url: 'https://cors-anywhere.herokuapp.com/https://tour.chungbuk.go.kr/openapi/tourInfo/attr.do',
         type:'GET',
+        dataType: 'json',
+        data:{
+        },
         success:(function(result){
-            console.log(result);
         })
-
     });
 </script>
 </body>
